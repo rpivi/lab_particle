@@ -3,6 +3,7 @@
 #include "ParticleType.hpp"
 #include "ResonanceType.hpp"
 #include <algorithm>
+#include<iterator>
 #include <array>
 
 class Particle
@@ -16,6 +17,7 @@ class Particle
   static int fNParticleType;
   static const int fMaxNumParticleType{10};
   static std::array<ParticleType*, fMaxNumParticleType> fParticleType;
+
   int FindParticle(char* Name) const
   {
     auto it  = fParticleType.begin();
@@ -33,8 +35,30 @@ class Particle
     return fIndex;
   }
   static void AddParticleType(char* const Name, double const Mass, int const Charge, double const Width = {0.});
+  
   void setIndex(int codex){};
   void setIndex(char* Name){};
+
+  void PrintParticleType(){};
+
+  void PrintParticle(){};
+
+  inline double getPx()const {return fP[0];};
+
+  inline double getPy()const {return fP[1]};
+
+  inline double getPz()const {return fP[2]};
+
+ inline double getMass()const {
+  return fParticleType[fIndex]->getMass();};
+
+  double NormP() const{};
+
+  double TotalEnergy() const{};
+
+  double InvMass(Particle &p){};
+
+  void setP(double px, double py, double pz){};
 
 };
 #endif

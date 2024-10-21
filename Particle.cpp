@@ -1,7 +1,11 @@
 
 #include "Particle.hpp"
+#include<iostream>
+#include<cmath>
+
 int Particle::fNParticleType{0};
 std::array<ParticleType*, Particle::fMaxNumParticleType> Particle::fParticleType;
+
 Particle::Particle(char* Name, std::array<double, 3> P)
     : fIndex{FindParticle(Name)}
     , fP(P)
@@ -26,5 +30,42 @@ void Particle::AddParticleType(char* const Name, double const Mass, int const Ch
     }
   }
 }
-void Particle::setIndex(int codex) {fIndex = codex;}
-void Particle::setIndex(char* Name) {}
+void Particle::setIndex(int Index) {
+  if(Index <= fMaxNumParticleType){
+  fIndex = Index;}}
+
+void Particle::setIndex(char* Name) {
+    fIndex = Particle::FindParticle(Name);
+  }
+
+void Particle::PrintParticleType()const {
+   for(auto const& p: fParticleType){
+      p->Print();
+      std::cout<<"/n";
+    }
+}
+
+void Particle::PrintParticle() const {
+  std::cout<<"Index: "<<fIndex<<"/n";
+  std::cout<<"Name: "<<*(fParticleType[fIndex]->getName())<<"/n";
+  std::cout<<"Momentum x:"<< fP[0]<<"/n Momentum y:"<<fP[1]<<"/n Momentum z:"<<fP[2]<<"/n";
+}
+
+double Particle::NormP() const{
+  double NormP = std::sqrt(std::pow(this->getPx(),2)+std::pow(this->getPy(),2)+std::pow(this->getPz(),2));
+  return NormP;
+}
+
+double Particle::TotalEnergy() const{
+  double E = std::sqrt(std::pow(this->getMass(), 2) + std::pow(this->NormP(),2));
+  return E;
+}
+
+double Particle::InvMass(Particle &p){
+  double InvM = std::sqrt(std::pow(this->TotalEnergy()+p->TotalEnergy(),2)-std::pow(this->NormP()+p->NormP(),2));
+  return InvM;
+}
+
+void setP(double px, double py, double pz){
+  fP ={ px, py, pz};
+}
