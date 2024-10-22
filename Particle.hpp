@@ -39,15 +39,15 @@ class Particle
   void setIndex(int codex){};
   void setIndex(char* Name){};
 
-  void PrintParticleType(){};
+  void PrintParticleType()const {};
 
-  void PrintParticle(){};
+  void PrintParticle()const {};
 
   inline double getPx()const {return fP[0];};
 
-  inline double getPy()const {return fP[1]};
+  inline double getPy()const {return fP[1];};
 
-  inline double getPz()const {return fP[2]};
+  inline double getPz()const {return fP[2];};
 
  inline double getMass()const {
   return fParticleType[fIndex]->getMass();};
