@@ -62,10 +62,10 @@ double Particle::TotalEnergy() const{
 }
 
 double Particle::InvMass(Particle &p){
-  double InvM = std::sqrt(std::pow(this->TotalEnergy()+p->TotalEnergy(),2)-std::pow(this->NormP()+p->NormP(),2));
+  double InvM = std::sqrt(std::pow(this->TotalEnergy()+p.TotalEnergy(),2)-std::pow(this->NormP()+p.NormP(),2));
   return InvM;
 }
 
 void setP(double px, double py, double pz){
-  fP ={ px, py, pz};
+  Particle::fP ={ px, py, pz};
 }
