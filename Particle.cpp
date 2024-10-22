@@ -66,6 +66,6 @@ double Particle::InvMass(Particle &p){
   return InvM;
 }
 
-void setP(double px, double py, double pz){
+void Particle::setP(double px, double py, double pz){
   Particle::fP ={ px, py, pz};
 }
