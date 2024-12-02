@@ -85,6 +85,15 @@ Distribuzioni principali e parametri dei fit:
 2. Assicurati che il file `compile.sh` abbia i permessi di esecuzione:
    ```bash
    chmod +x compile.sh
+3. Per compilare:
+   ```bash
+   ./compile.sh
+4. Per eseguire la generazione:
+   ```bash
+   main_module();
+5. Per eseguire l'analisi:
+   ```bash
+   macro_analysis();
 
 
 /*This is a try
