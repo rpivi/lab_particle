@@ -48,11 +48,11 @@ Le particelle sono generate stocasticamente utilizzando il metodo Monte Carlo di
 
 ## Come Eseguire il Progetto
 
-1. Clona questo repository.  
+1. Clona questo repository e assicurati di avere installato ROOT.  
 2. Assicurati che il file `compile.sh` abbia i permessi di esecuzione:
    ```bash
    chmod +x compile.sh
-3. Per compilare (questo comando aprirà anche root):
+3. Per compilare (questo comando aprirà anche ROOT):
    ```bash
    ./compile.sh
 4. Per eseguire la generazione:
