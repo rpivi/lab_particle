@@ -29,7 +29,7 @@ Il programma implementa tre classi principali:
 - `Particle` utilizza una relazione *has-a* con `ParticleType`.  
 
 ## Generazione degli Eventi
-- La generazione è svilta dal file `main_module.cpp`.
+- La generazione è svolta dal file `main_module.cpp`.
 - Generati \(10^5\) eventi totali.  
 - Ogni evento contiene almeno 100 particelle.  
 - Distribuzione delle particelle secondo le probabilità specificate:  
