@@ -61,8 +61,3 @@ Le particelle sono generate stocasticamente utilizzando il metodo Monte Carlo di
 5. Per eseguire l'analisi:
    ```bash
    macro_analysis();
-
-
-/*This is a try
-in Particle.hpp l'array P permette di usare gli algoritmi
-NON usare std::vector nel vettore grande*/
