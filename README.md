@@ -8,31 +8,38 @@
 Questo progetto simula eventi fisici risultanti da collisioni di particelle elementari.  
 Il codice, scritto in C++, utilizza la libreria ROOT per analisi dati e generazione di grafici.  
 
-Consultare la relazione presente nella repository per maggiori chiarimenti sul codice e sui risultati della simulazione.
+Consultare la relazione inclusa nella repository per dettagli tecnici sul codice e i risultati della simulazione.
 
 ## Struttura del Codice
 
 Il programma implementa tre classi principali:  
 
 1. **ParticleType**  
-   - Descrive massa, carica e nome delle particelle elementari.  
+   - Proprietà: massa, carica e nome delle particelle elementari.  
 
 2. **ResonanceType**  
-   - Estende `ParticleType` includendo la larghezza di risonanza.  
+   - Estensione di `ParticleType`, include la larghezza di risonanza.  
 
 3. **Particle**  
-   - Descrive quantità di moto e include un array di puntatori a `ParticleType`.  
+   - Gestisce quantità di moto e include un array di puntatori a `ParticleType`.  
 
 ### Gerarchia delle Classi
 
-- `ResonanceType` eredita da `ParticleType` e sovrascrive il metodo `Print()`.  
-- `Particle` utilizza una relazione *has-a* con `ParticleType`.  
+- **ResonanceType** eredita da `ParticleType` sovrascrivendo il metodo `Print()`.  
+- **Particle** utilizza un array di puntatori a `ParticleType` (relazione *has-a*).  
+
+### Principali Metodi Implementati
+
+- `FindParticle`: Ritorna l'indice del tipo di particella.  
+- `PrintParticle`: Mostra le informazioni di una particella.  
+- `TotalEnergy`: Calcola l'energia totale (formula relativistica).  
+- `InvMass`: Ritorna la massa invariante.  
+- `Decay2body`: Gestisce il decadimento di una particella `K\0*` in due particelle figlie.
 
 ## Generazione degli Eventi
-- La generazione è svolta dal file `main_module.cpp`.
-- Generati \(10^5\) eventi totali.  
-- Ogni evento contiene almeno 100 particelle.  
-- Distribuzione delle particelle secondo le probabilità specificate:  
+
+La simulazione genera 10^5 eventi con almeno 100 particelle per evento.  
+Le particelle vengono distribuite in base alle probabilità seguenti:  
 
 | Particella | Probabilità (%) |
 |------------|-----------------|
@@ -42,9 +49,16 @@ Il programma implementa tre classi principali:
 | k⁻         | 5              |
 | p⁺         | 4.5            |
 | p⁻         | 4.5            |
-| K\*⁰       | 1              |
+| K\0*       | 1              |
 
-Le particelle sono generate stocasticamente utilizzando il metodo Monte Carlo di ROOT.
+## Analisi dei Risultati
+
+L'analisi dei dati è stata eseguita utilizzando ROOT, generando istogrammi e grafici per verificare la compatibilità tra dati teorici e sperimentali.
+
+- **Istogrammi principali**:
+  - Distribuzione angoli (polari e azimutali).
+  - Distribuzione quantità di moto.
+  - Sottrazione masse invarianti.
 
 ## Come Eseguire il Progetto
 
