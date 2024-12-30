@@ -1,4 +1,4 @@
-# Simulazione del Decadimento della Particella K\0*
+# Simulazione del Decadimento della Particella K\{0*}
 
 **Autori**: Malagoli Tommaso Andrea, Mazzi Davide, Pivi Riccardo, Schirripa Mattia  
 **Data**: Novembre 2024  
