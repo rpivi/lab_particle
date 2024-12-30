@@ -1,4 +1,4 @@
-# Simulazione del Decadimento della Particella K^{0*}
+# Simulazione del Decadimento della Particella K^0*
 
 **Autori**: Malagoli Tommaso Andrea, Mazzi Davide, Pivi Riccardo, Schirripa Mattia  
 **Data**: Novembre 2024  
@@ -34,7 +34,7 @@ Il programma implementa tre classi principali:
 - `PrintParticle`: Mostra le informazioni di una particella.  
 - `TotalEnergy`: Calcola l'energia totale (formula relativistica).  
 - `InvMass`: Ritorna la massa invariante.  
-- `Decay2body`: Gestisce il decadimento di una particella `K^{0*}` in due particelle figlie.
+- `Decay2body`: Gestisce il decadimento di una particella `K^0*` in due particelle figlie.
 
 ## Generazione degli Eventi
 
@@ -49,7 +49,7 @@ Le particelle vengono distribuite in base alle probabilità seguenti:
 | k⁻         | 5              |
 | p⁺         | 4.5            |
 | p⁻         | 4.5            |
-| K^{0*}       | 1              |
+| K^0*      | 1              |
 
 ## Analisi dei Risultati
 
