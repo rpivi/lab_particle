@@ -59,11 +59,11 @@ L'analisi dei dati è stata eseguita utilizzando ROOT, generando istogrammi e gr
 
 - **Istogrammi principali**:
   - Distribuzione angoli (polari e azimutali).
-![](./Angles.pdf)
+![](./Angles.png)
   - Distribuzione quantità di moto.
 ![](./Impulse.png)
   - Sottrazione masse invarianti.
-![](./Subtraction.pdf)
+![](./Subtraction.png)
 ## Come Eseguire il Progetto
 
 1. Clona questo repository e assicurati di avere installato ROOT.  
