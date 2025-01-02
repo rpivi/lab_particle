@@ -43,13 +43,13 @@ Le particelle vengono distribuite in base alle probabilità seguenti:
 
 | Particella | Probabilità (%) |
 |------------|-----------------|
-| π⁺         | 40             |
-| π⁻         | 40             |
-| k⁺         | 5              |
-| k⁻         | 5              |
-| p⁺         | 4.5            |
-| p⁻         | 4.5            |
-| K^0*      | 1              |
+| π⁺: indice 0   | 40             |
+| π⁻: indice 1        | 40             |
+| k⁺: indice 2      | 5              |
+| k⁻: indice 3      | 5              |
+| p⁺: indice 4        | 4.5            |
+| p⁻: indice 5       | 4.5            |
+| K^0*: indice 6     | 1              |
 
 ![abbondanza di particelle](./manyparticles.png)
 
