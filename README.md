@@ -51,15 +51,19 @@ Le particelle vengono distribuite in base alle probabilità seguenti:
 | p⁻         | 4.5            |
 | K^0*      | 1              |
 
+![abbondanza di particelle](./manyparticles.png)
+
 ## Analisi dei Risultati
 
 L'analisi dei dati è stata eseguita utilizzando ROOT, generando istogrammi e grafici per verificare la compatibilità tra dati teorici e sperimentali.
 
 - **Istogrammi principali**:
   - Distribuzione angoli (polari e azimutali).
+![](./Angles.pdf)
   - Distribuzione quantità di moto.
+![](./Impulse.png)
   - Sottrazione masse invarianti.
-
+![](./Subtraction.pdf)
 ## Come Eseguire il Progetto
 
 1. Clona questo repository e assicurati di avere installato ROOT.  
