@@ -8,7 +8,7 @@
 Questo progetto simula eventi fisici risultanti da collisioni di particelle elementari.  
 Il codice, scritto in C++, utilizza la libreria ROOT per analisi dati e generazione di grafici.  
 
-Consultare la relazione in formato pdf (Esperimento_Particelle.pdf) inclusa nella repository per dettagli tecnici sul codice e i risultati della simulazione.
+Consultare la relazione in formato pdf ([Esperimento_Particelle.pdf](Esperimento_Particelle.pdf)) inclusa nella repository per dettagli tecnici sul codice e i risultati della simulazione.
 
 ## Struttura del Codice
 
