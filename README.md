@@ -55,7 +55,7 @@ Le particelle vengono distribuite in base alle probabilità seguenti:
 
 ## Analisi dei Risultati
 
-L'analisi dei dati è stata eseguita utilizzando ROOT, generando istogrammi e grafici per verificare la compatibilità tra dati teorici e sperimentali.
+L'analisi dei dati è stata eseguita utilizzando ROOT, generando istogrammi e grafici per verificare la compatibilità tra i dati teorici e la simulazione.
 
 - **Istogrammi principali**:
   - Distribuzione angoli (polari e azimutali).
